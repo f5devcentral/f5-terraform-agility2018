@@ -5,10 +5,10 @@
 # ------------
 #
 # REQUIRED: Your class/lab name
-classname = "Getting Started with F5 BIG-IP"
+classname = "Getting Started with F5 Terraform"
 
 # OPTIONAL: The URL to the GitHub Repository for this class
-github_repo = "https://github.com/f5devcentral/your-class-repo"
+github_repo = "https://github.com/f5devcentral/f5-terraform-agility2018"
 
 # OPTIONAL: Google Analytics
 # googleanalytics_id = 'UA-85156643-4'
