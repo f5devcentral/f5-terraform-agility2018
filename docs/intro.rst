@@ -49,9 +49,10 @@ components:
     * - **Component**
       - **VLAN/IP Address(es)**
       - **Credentials**
-    * - BIG-IP Acess 
-      - - **Management:** 10.1.1.10
-        - **External:** 10.1.10.51
-      - ``f5student``/``f5DEMOs4u``
+    * - BIG-IP Access 
+      - - **Management:** https://10.1.1.246
+        - **External:** 10.1.10.246
+        - **Internal:** 10.1.20.246
+      - ``admin``/``admin``
 
     
