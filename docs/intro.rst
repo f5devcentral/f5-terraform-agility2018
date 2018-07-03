@@ -40,8 +40,18 @@ components:
       - - **Management:** 10.1.1.10
         - **External:** 10.1.10.51
       - ``f5student``/``f5DEMOs4u``
-    * - To access BIG-IP
-      - - **Management:** use https://10.1.1.246
-      - - **External:** 10.1.10.246
-        - **Internal:** 10.1.20.246
-      - ``admin``/``admin``
+
+.. list-table::
+    :widths: 20 40 40
+    :header-rows: 1
+    :stub-columns: 1
+
+    * - **Component**
+      - **VLAN/IP Address(es)**
+      - **Credentials**
+    * - BIG-IP Acess 
+      - - **Management:** 10.1.1.10
+        - **External:** 10.1.10.51
+      - ``f5student``/``f5DEMOs4u``
+
+    
