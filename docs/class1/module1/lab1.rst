@@ -18,10 +18,11 @@ Follow these steps to complete this task:
 
 #. Click on the Linux ``go1.10.3.linux-amd64.tar.gz`` file.
 
-#.  Open terminal on the Client/Jumpbox VM
+#. Open terminal on the Client/Jumpbox VM
 
-#.  Execute the following command
+#. Execute the following command
    ``cd Download``
+
    ``sudo tar -C /usr/local -xzf go1.10.3.linux-amd64.tar.gz``
    
    .. IMPORTANT:: Enter password as f5DEMOs4u and username f5student
@@ -37,8 +38,4 @@ Follow these steps to complete this task:
  
   .. IMPORTANT:: You should see the following
 
-  ``export PATH=$PATH:/usr/local/go/bin``
-
-
-
-  
+    ``go version go1.10.3 linux/amd64``
