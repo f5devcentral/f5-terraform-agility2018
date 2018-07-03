@@ -36,9 +36,12 @@ components:
     * - **Component**
       - **VLAN/IP Address(es)**
       - **Credentials**
-    * - Jump Box 
+    * - Jump Box RDP
       - - **Management:** 10.1.1.10
         - **External:** 10.1.10.51
       - ``f5student``/``f5DEMOs4u``
-
-
+    * - To access BIG-IP
+      - - **Management:** use https://10.1.1.246
+      - - **External:** 10.1.10.246
+        - **Internal:** 10.1.20.246
+      - ``admin``/``admin``
