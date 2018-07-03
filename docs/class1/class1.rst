@@ -5,12 +5,10 @@ Class - |classname|
 
 This class covers the following topics:
 
-- Downloading a |f5| |bip| |ve|
-- Installing a |bip| |ve| image on a hypervisor
-- Installing a |f5| |bip| Appliance
-- Powering on a |bip| Appliance
+- Downloading a GO from https://golang.org
+- Installing GO  
 
-Expected time to complete: **3 hours**
+Expected time to complete: ** 15 mins **
 
 .. toctree::
    :maxdepth: 1
