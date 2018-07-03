@@ -1,30 +1,26 @@
-Lab – Download the |bip| |ve| Image
+Lab – Download the GO tar file 
 -----------------------------------
 
 .. TODO:: Needs lab description
 
-This lab will teach you how to download the |bip| |ve| image to your system.
+This lab will teach you how to download the GO package to your system.
 
 Task – Open a Web Browser
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. TODO:: Needs task description
 
-In this task you will open a web browser and navigate to the |f5| Downloads
+In this task you will open a web browser and navigate to the https://golang.org/dl/
 site.
 
-.. NOTE:: An account is required to download software.  You can create one at
-   https://login.f5.com/resource/registerEmail.jsp
+.. NOTE:: You don't need GO programming skills.
 
 Follow these steps to complete this task:
 
 #. Open your web browser
-#. Navigate to https://downloads.f5.com
-#. Login with your username and password.
-#. After logging in you should see the following window:
+#. Navigate to https://golang.org/dl/
 
-   |image1|
-
+  .. image:: /_static/goimage.png
 Task – Download the Image
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 

@@ -5,8 +5,8 @@ Class - |classname|
 
 This class covers the following topics:
 
-- Downloading a GO from https://golang.org
-- Installing GO  
+- Downloading GO package from https://golang.org
+- Installing GO & testing GO
 
 Expected time to complete: ** 15 mins **
 

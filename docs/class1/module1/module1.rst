@@ -1,9 +1,9 @@
-Module – Installing a BIG-IP Virtual Edition
+Module – Installing GO package 
 =============================================
 
 .. TODO:: Needs module description
 
-In this module you will learn how to install a |f5| |bip| |ve| into your
+In this module you will learn how to install a GO  into your
 environment.
 
 .. toctree::
