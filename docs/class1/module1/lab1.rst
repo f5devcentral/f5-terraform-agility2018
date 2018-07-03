@@ -21,25 +21,35 @@ Follow these steps to complete this task:
 #. Navigate to https://golang.org/dl/
 
   .. image:: /_static/goimage.png
-Task – Download the Image
-~~~~~~~~~~~~~~~~~~~~~~~~~
+Task – Download the Go Package as shown in Red
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. TODO:: Needs task description
 
-In this task we will download the |f5| |bip| |ve| image to your system
-
 Follow these steps to complete this task:
 
-#. Click the 'Find a Download' button.
+#. Click the 'Linux go1.10.3.linux-amd64.tar.gz' file.
 
-   .. image:: /_static/image002.png
+   
+#.  Open terminal on the Client/Jumpbox VM
 
-#. Click the link that contains the |bip| TMOS software version you would like
-   to download.
+#.  Execute the following command
+   `` cd Download
+    sudo tar -C /usr/local -xzf go1.10.3.linux-amd64.tar.gz ``
+   
+   .. IMPORTANT:: Enter password as f5DEMOs4u and username f5student
 
-   .. IMPORTANT:: Be sure to click a link that has "\ |ve|" in the name
+#. Include GO executable in the Path
 
-#. Find the image appropriate for your hypervisor
-#. Download the image and save it to you local system
 
-.. |image1| image:: /_static/image001.png
+  `` export PATH=$PATH:/usr/local/go/bin ``
+
+#. Test GO pacakage by executing
+
+  `` go version ``
+ 
+  .. IMPORTANT:: You should see the following
+
+  `` export PATH=$PATH:/usr/local/go/bin ``
+  
+  
