@@ -11,6 +11,7 @@ Follow these steps to complete this task:
 #. Navigate to https://golang.org/dl/
 
   .. image:: /_static/goimage.png
+
 Task – Download the Go Package as shown in Above
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -20,7 +21,8 @@ Follow these steps to complete this task:
 
 #. Open terminal on the Client/Jumpbox VM
 
-#. Execute the following command
+#. Execute the following command on Jumpbox terminal
+
    ``cd Download``
 
    ``sudo tar -C /usr/local -xzf go1.10.3.linux-amd64.tar.gz``
@@ -28,7 +30,6 @@ Follow these steps to complete this task:
    .. IMPORTANT:: Enter password as f5DEMOs4u and username f5student
 
 #. Include GO executable in the Path
-
 
   ``export PATH=$PATH:/usr/local/go/bin``
 
