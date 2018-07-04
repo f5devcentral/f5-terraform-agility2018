@@ -6,17 +6,11 @@ Build F5 BIG-IP Provider
 Please follow the instructions provided by the instructor to start your
 lab and access your jump host.
 
-#. Open terminal on the Client/Jumpbox VM
+#. Open terminal on the Client/Jumpbox VM  and execute ``go version``
 
- ``go version``
+#. Come to home directory ``cd``
 
-#. Come to home directory
-
- ``cd``
-
-#. Create a directory workspace from the home directory
-
- ``mkdir workspace``
+#. Create a directory workspace from the home directory ``mkdir workspace``
 
 #. Change GOPATH pointing to workspace 
 
