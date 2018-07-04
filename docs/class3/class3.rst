@@ -38,19 +38,11 @@ lab and access your jump host.
 
 #. Now initialize the bigip provider plugin
 
- ``terraform init``
+    ``terraform init``
 
- ``Initializing provider plugins...``
+    ``Initializing provider plugins...``
 
- Terraform has been successfully initialized!
-
- You may now begin working with Terraform. Try running "terraform plan" to see
- any changes that are required for your infrastructure. All Terraform commands
- should now work.
-
- If you ever set or change modules or backend configuration for Terraform,
- rerun this command to reinitialize your working directory. If you forget, other
- commands will detect it and remind you to do so if necessary.``
+    ``Terraform has been successfully initialized!``
 
 .. NOTE:: For 4. you can use go env command to see the output
 
