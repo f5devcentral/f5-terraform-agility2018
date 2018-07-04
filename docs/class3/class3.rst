@@ -6,10 +6,10 @@ Build F5 BIG-IP Provider
 Please follow the instructions provided by the instructor to start your
 lab and access your jump host.
 
+#. Open terminal on the Client/Jumpbox VM
+
 
  ``go version``
-
- ``go versio``
 
  ``go1.9.2 darwin/amd64``
 
@@ -29,7 +29,17 @@ lab and access your jump host.
 
  ``go build``
 
- ``create .tf``
+ #. Create TF file using any editor name the file as master.tf & enter the below code
+
+ ``provider "bigip {``
+
+ ``address = "10.1.1.246"``
+ 
+ ``username = "admin"``
+ 
+ ``password = "admin"``
+ 
+ ``}``
 
  ``terraform init``
 
