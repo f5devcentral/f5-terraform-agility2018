@@ -8,26 +8,43 @@ lab and access your jump host.
 
 #. Open terminal on the Client/Jumpbox VM
 
-
  ``go version``
 
- ``go1.9.2 darwin/amd64``
+#. Come to home directory
 
  ``cd``
 
+#. Create a directory workspace from the home directory
+
  ``mkdir workspace``
+
+#. Change GOPATH pointing to workspace 
 
  ``export GOPATH=$HOME/workspace``
 
+.. NOTE:: You can use go env command to see the output
+
+#. Create directories as shown below place holder for the repo
+
  ``mkdir -p $GOPATH/src/github.com/f5devcentral``
+
+#. Change the directory to workspace
 
  ``cd $GOPATH``
 
+#. Get the provider code from github  as shown
+
  ``go get github.com/f5devcentral/terraform-provider-bigip``
+
+#. Change directory to the provider directory 
 
  ``cd src/github.com/f5devcentral/terraform-provider-bigip/``
 
+#. Build the F5 BIG-IP Terraform Provider Binary
+
  ``go build``
+
+.. NOTE:: You can use ls -lrt to see ``terraform-provider-bigip`` is created 
 
  #. Create TF file using any editor name the file as master.tf & enter the below code
 
@@ -40,6 +57,8 @@ lab and access your jump host.
  ``password = "admin"``
  
  ``}``
+
+#. Now initialize the bigip provider plugin
 
  ``terraform init``
 
