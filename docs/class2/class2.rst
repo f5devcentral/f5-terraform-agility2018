@@ -35,10 +35,17 @@ Follow these steps to complete this task:
    
    ``sudo mv terraform /usr/local/bin``
 
+#. Test Terraform  pacakage by executing
+
+  ``terraform -version``
+ 
+  .. IMPORTANT:: You should see the following
+
+    ``Terraform v0.11.7``
 
 
 
-.. NOTE::
+   .. NOTE::
 	 All work for this lab will be performed exclusively from the 
 	 jumphost. No installation or interaction with your local system is
 	 required.
