@@ -14,8 +14,6 @@ lab and access your jump host.
 
 #. Change GOPATH pointing to workspace -> ``export GOPATH=$HOME/workspace``
 
-.. NOTE:: You can use go env command to see the output
-
 #. Create directories as shown below place holder for the repo -> ``mkdir -p $GOPATH/src/github.com/f5devcentral``
 
 #. Change the directory to workspace -> ``cd $GOPATH``
@@ -26,19 +24,17 @@ lab and access your jump host.
 
 #. Build the F5 BIG-IP Terraform Provider Binary -> ``go build``
 
-.. NOTE:: You can use ls -lrt to see ``terraform-provider-bigip`` is created 
+#. Create TF file using any editor name the file as master.tf & enter the below code
 
- #. Create TF file using any editor name the file as master.tf & enter the below code
+    ``provider "bigip {``
 
- ``provider "bigip {``
-
- ``address = "10.1.1.246"``
+    ``address = "10.1.1.246"``
  
- ``username = "admin"``
+    ``username = "admin"``
  
- ``password = "admin"``
+    ``password = "admin"``
  
- ``}``
+    ``}``
 
 #. Now initialize the bigip provider plugin
 
@@ -55,6 +51,10 @@ lab and access your jump host.
  If you ever set or change modules or backend configuration for Terraform,
  rerun this command to reinitialize your working directory. If you forget, other
  commands will detect it and remind you to do so if necessary.``
+
+.. NOTE:: For 4. you can use go env command to see the output
+
+.. NOTE:: For 9. you can use ls -lrt to see ``terraform-provider-bigip`` is created 
 
 .. NOTE::
  All work for this lab will be performed exclusively from the Windows
