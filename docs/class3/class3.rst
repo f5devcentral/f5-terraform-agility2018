@@ -7,14 +7,15 @@ Please follow the instructions provided by the instructor to start your
 lab and access your jump host.
 
       
-	 ``go version``
-     ``go version go1.9.2 darwin/amd64``
-	 ``cd``
+     ``go version``
+     ``go versio``
+     ``go1.9.2 darwin/amd64``
+     ``cd``
      ``mkdir workspace``
      ``export GOPATH=$HOME/workspace``
      ``mkdir -p $GOPATH/src/github.com/f5devcentral``
-	 ``cd $GOPATH``
-	 ``go get github.com/f5devcentral/terraform-provider-bigip``
+     ``cd $GOPATH``
+     ``go get github.com/f5devcentral/terraform-provider-bigip``
      ``cd src/github.com/f5devcentral/terraform-provider-bigip/``
      ``go build``
      ``create .tf``
