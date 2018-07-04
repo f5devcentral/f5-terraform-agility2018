@@ -6,37 +6,25 @@ Build F5 BIG-IP Provider
 Please follow the instructions provided by the instructor to start your
 lab and access your jump host.
 
-#. Open terminal on the Client/Jumpbox VM  and execute ``go version``
+#. Open terminal on the Client/Jumpbox VM  and execute -> ``go version``
 
-#. Come to home directory ``cd``
+#. Come to home directory -> ``cd``
 
-#. Create a directory workspace from the home directory ``mkdir workspace``
+#. Create a directory workspace from the home directory -> ``mkdir workspace``
 
-#. Change GOPATH pointing to workspace 
-
- ``export GOPATH=$HOME/workspace``
+#. Change GOPATH pointing to workspace -> ``export GOPATH=$HOME/workspace``
 
 .. NOTE:: You can use go env command to see the output
 
-#. Create directories as shown below place holder for the repo
+#. Create directories as shown below place holder for the repo -> ``mkdir -p $GOPATH/src/github.com/f5devcentral``
 
- ``mkdir -p $GOPATH/src/github.com/f5devcentral``
+#. Change the directory to workspace -> ``cd $GOPATH``
 
-#. Change the directory to workspace
+#. Get the provider code from github  as shown -> ``go get github.com/f5devcentral/terraform-provider-bigip``
 
- ``cd $GOPATH``
+#. Change directory to the provider directory -> ``cd src/github.com/f5devcentral/terraform-provider-bigip/``
 
-#. Get the provider code from github  as shown
-
- ``go get github.com/f5devcentral/terraform-provider-bigip``
-
-#. Change directory to the provider directory 
-
- ``cd src/github.com/f5devcentral/terraform-provider-bigip/``
-
-#. Build the F5 BIG-IP Terraform Provider Binary
-
- ``go build``
+#. Build the F5 BIG-IP Terraform Provider Binary -> ``go build``
 
 .. NOTE:: You can use ls -lrt to see ``terraform-provider-bigip`` is created 
 
