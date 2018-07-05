@@ -10,10 +10,10 @@ Follow these steps to complete this task:
 #. Open your web browser
 #. Navigate to https://golang.org/dl/
 
-  .. image:: /_static/goimage.png
+.. image:: /_static/goimage.png
 
-Task – Download the Go Package as shown in Above
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Task – Download the Go Package as shown
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Follow these steps to complete this task:
 
@@ -33,9 +33,7 @@ Follow these steps to complete this task:
 
   ``export PATH=$PATH:/usr/local/go/bin``
 
-#. Test GO pacakage by executing
-
-  ``go version``
+#. Test GO pacakage by executing -> ``go version``
  
   .. IMPORTANT:: You should see the following
 

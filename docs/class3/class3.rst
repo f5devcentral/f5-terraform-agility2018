@@ -6,6 +6,14 @@ Build F5 BIG-IP Provider
 Please follow the instructions provided by the instructor to start your
 lab and access your jump host.
 
+Expected time to complete: ** 15 mins **
+
+This class covers the following topics:
+
+- Downloading the big-ip terraform provider code package from https://github.com/f5devcentral/terraform-provider-bigip
+- Building bigip terraform provider binary 
+- Creating .TF file for bigip and Initializing 
+
 #. Open terminal on the Client/Jumpbox VM  and execute -> ``go version``
 
 #. Come to home directory -> ``cd``
