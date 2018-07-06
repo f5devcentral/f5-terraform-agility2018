@@ -93,7 +93,7 @@ This class covers the following topics:
       name:                         "/Common/internal"
       tag:                          "101"
 
-   + bigip_net_vlan.vlan2
+    + bigip_net_vlan.vlan2
       id:                           <computed>
       interfaces.#:                 "1"
       interfaces.0.tagged:          "false"
@@ -101,7 +101,7 @@ This class covers the following topics:
       name:                         "/Common/external"
       tag:                          "102"
 
-   + bigip_sys_dns.dns1
+    + bigip_sys_dns.dns1
       id:                           <computed>
       description:                  "/Common/DNS1"
       name_servers.#:               "1"
@@ -110,7 +110,7 @@ This class covers the following topics:
       search.#:                     "1"
       search.3719609835:            "f5.com"
 
-   + bigip_sys_ntp.ntp1
+    + bigip_sys_ntp.ntp1
       id:                           <computed>
       description:                  "/Common/NTP1"
       servers.#:                    "1"
@@ -118,9 +118,9 @@ This class covers the following topics:
       timezone:                     "America/Los_Angeles"
 
 
-   Plan: 10 to add, 0 to change, 0 to destroy.
+    Plan: 10 to add, 0 to change, 0 to destroy.
 
-   ------------------------------------------------------------------------
+    ------------------------------------------------------------------------
 
 Note: You didn't specify an "-out" parameter to save this plan, so Terraform
 can't guarantee that exactly these actions will be performed if
