@@ -1,8 +1,6 @@
 Getting Started
 ---------------
 
-.. TODO:: Complete getting started instructions
-
 Please follow the instructions provided by the instructor to start your
 lab and access your jump host.
 
@@ -20,10 +18,11 @@ The following components have been included in your lab environment:
 - 1 x Webserver (xubuntu 14.04)
 - 1 x Jumphost / Terraform 
 
+  .. image:: /_static/topo.png
+
 Lab Components
 ^^^^^^^^^^^^^^
 
-.. TODO:: Complete lab components table
 
 The following table lists VLANS, IP Addresses and Credentials for all
 components:
