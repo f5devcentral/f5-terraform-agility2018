@@ -11,31 +11,23 @@ This class covers the following topics:
 - Execute Terraform Plan to check what terraform will create on big-ip 
 - Execute Terraform apply to manifest the configuration on big-ip 
 
-#. Open master.tf in  terminal on the Client/Jumpbox VM   
+#. Open master.tf in  terminal on the Client/Jumpbox VM::   
 
-		``provider "bigip" {``
-
-			``address = "10.1.1.246"``
-
-			``username = "admin"``
-
-			``password = "admin"``
-
-		``}``
+		     provider "bigip" {
+			 address = "10.1.1.246"
+			 username = "admin"
+			 password = "admin"
+		}
  
-#. Update master file to include ntp resource   
+#. Update master file to include ntp resource::  
 
-		``resource "bigip_sys_ntp" "ntp1" {``
+		resource "bigip_sys_ntp" "ntp1" {
+			description = "/Common/NTP1"
+    		servers = ["time.google.com"]
+			timezone = "America/Los_Angeles"
+		 }
 
-			``description = "/Common/NTP1"``
-
-			``servers = ["time.google.com"]``
-
-			``timezone = "America/Los_Angeles"``
-
-		``}``
-
-#. Update master file to include dns resource   
+#. Update master file to include dns resource::  
 
 		``resource "bigip_sys_dns" "dns1" {``
 
