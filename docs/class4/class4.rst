@@ -1,5 +1,5 @@
-Class - |Creating Simple VS Pool, NTP etc|
-==========================================
+Creating Terraform TF File 
+==========================
 
 This class covers the following topics:
 

@@ -1,7 +1,6 @@
-Module – Installing GO package 
-=============================================
+Module – Creating TF file with ntp, vlan, dns, selfip
+=====================================================
 
-.. TODO:: Needs module description
 
 In this module you will learn how to install a GO  into your
 environment.
