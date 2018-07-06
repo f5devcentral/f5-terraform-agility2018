@@ -8,10 +8,10 @@ This class covers the following topics:
 
 #. Execute Terraform Apply::
 
-  terraform apply
-  An execution plan has been generated and is shown below.
-  Resource actions are indicated with the following symbols:
-  + create
+     terraform apply
+     An execution plan has been generated and is shown below.
+     Resource actions are indicated with the following symbols:
+     + create
 
 Terraform will perform the following actions::
 
