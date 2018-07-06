@@ -35,6 +35,8 @@ This class covers the following topics:
 
 		}
 
+#. Update master file to include dns resource   
+
 		resource "bigip_sys_dns" "dns1" {
 
 			description = "/Common/DNS1"
@@ -46,6 +48,9 @@ This class covers the following topics:
 			search = ["f5.com"]
 
 		}
+
+#. Update master file to include internal vlan resource   
+
 		resource "bigip_net_vlan" "vlan1" {
 
 			name = "/Common/internal"
@@ -61,6 +66,8 @@ This class covers the following topics:
 			}	
 
 		}
+
+#. Update master file to include external vlan resource   
 
 		resource "bigip_net_vlan" "vlan2" {
 
@@ -78,6 +85,8 @@ This class covers the following topics:
 
 		}
 
+#. Update master file to include Internal Self IP resource  
+
 		resource "bigip_net_selfip" "selfip1" {
 
 			name = "/Common/internalselfIP"
@@ -89,6 +98,8 @@ This class covers the following topics:
 			depends_on = ["bigip_net_vlan.vlan1"]
 
 			}
+
+#. Update master file to include External Self IP resource
 
 		resource "bigip_net_selfip" "selfip2" {
 		
@@ -102,6 +113,7 @@ This class covers the following topics:
 		
 				}
 
+#. Update master file to include http monitoring   
 
 		resource "bigip_ltm_monitor" "monitor" {
 		
@@ -117,6 +129,8 @@ This class covers the following topics:
 		
 		}
 
+#. Update master file to include Server Pool 
+
 		resource "bigip_ltm_pool"  "pool" {
 		
 				name = "/Common/terraform-pool"
@@ -131,6 +145,9 @@ This class covers the following topics:
 		
 		}
 
+#. Update master file to Attach Node or include member in Pool
+
+
 		resource "bigip_ltm_pool_attachment" "attach_node" {
 		
 				pool = "/Common/terraform-pool"
@@ -140,6 +157,9 @@ This class covers the following topics:
 				depends_on = ["bigip_ltm_pool.pool"]
 
 		}
+
+#. Update master file to Create a Virtual Server using Pool 
+
 		resource "bigip_ltm_virtual_server" "http" {
 	
 				pool = "/Common/terraform-pool"
