@@ -32,7 +32,7 @@ This class covers the following topics:
 
 #. Create TF file using any editor name the file as master.tf & enter the below code
 
-    ``provider "bigip {``
+    ``provider "bigip" {``
 
     ``address = "10.1.1.246"``
  
