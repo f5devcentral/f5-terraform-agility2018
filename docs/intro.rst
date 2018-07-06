@@ -7,7 +7,11 @@ lab and access your jump host.
 .. NOTE::
 	 All work for this lab will be performed exclusively from the 
 	 jumphost. No installation or interaction with your local system is
-	 required.
+	 required. RDP to Jumpbox f5student/f5DEMOs4u
+
+Please use Blueprint Terraform-scs-7-05-bp
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 Lab Topology
 ~~~~~~~~~~~~
