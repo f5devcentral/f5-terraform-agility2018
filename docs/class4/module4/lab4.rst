@@ -117,7 +117,9 @@ This class covers the following topics:
   Terraform will perform the actions described above.
   Only 'yes' will be accepted to approve.
 
-Enter a value: yes::
+  Enter a value: yes
+
+#. Creating configuration::
 
 	bigip_sys_ntp.ntp1: Creating...
        	  description:        "" => "/Common/NTP1"
