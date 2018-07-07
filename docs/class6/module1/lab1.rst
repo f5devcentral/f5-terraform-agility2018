@@ -1,14 +1,12 @@
 Remove Virtual Server  Configuration
 ------------------------------------
 
-
 Please follow the instructions provided by the instructor to start your
 lab and access your jump host.
 
 #. Remove Virtual Server configuration::
-
    
-   terraform destroy -target=bigip_ltm_virtual_server.http
+        terraform destroy -target=bigip_ltm_virtual_server.http
 	bigip_ltm_pool.pool: Refreshing state... (ID: /Common/terraform-pool)
 	bigip_ltm_virtual_server.http: Refreshing state... (ID: /Common/terraform_vs_http)
 
