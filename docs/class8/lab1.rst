@@ -8,48 +8,48 @@ lab and access your jump host.
    
    terraform apply
 
-   Enter a value: yes
+   	Enter a value: yes
 
-   bigip_sys_ntp.ntp1: Creating...
-   description:        "" => "/Common/NTP1"
-   servers.#:          "0" => "1"
-   servers.1450813517: "" => "time.google.com"
-   timezone:           "" => "America/Los_Angeles"
-   bigip_net_vlan.vlan1: Creating...
-   interfaces.#:          "0" => "1"
-   interfaces.0.tagged:   "" => "false"
-   interfaces.0.vlanport: "" => "1.2"
-   name:                  "" => "/Common/internal"
-   tag:                   "" => "101"
-   bigip_net_vlan.vlan2: Creating...
-   interfaces.#:          "0" => "1"
-   interfaces.0.tagged:   "" => "false"
-   interfaces.0.vlanport: "" => "1.1"
-   name:                  "" => "/Common/external"
-   tag:                   "" => "102"
-   bigip_sys_dns.dns1: Creating...
-   description:             "" => "/Common/DNS1"
-   name_servers.#:          "0" => "1"
-   name_servers.3817307869: "" => "8.8.8.8"
-   number_of_dots:          "" => "2"
-   search.#:                "0" => "1"
-   search.3719609835:       "" => "f5.com"
-   bigip_sys_ntp.ntp1: Creation complete after 2s (ID: /Common/NTP1)
-   bigip_sys_dns.dns1: Creation complete after 2s (ID: /Common/DNS1)
-   bigip_net_vlan.vlan1: Creation complete after 2s (ID: /Common/internal)
-   bigip_net_selfip.selfip1: Creating...
-   ip:   "" => "10.1.20.246/24"
-   name: "" => "/Common/internalselfIP"
-   vlan: "" => "/Common/internal"
-   bigip_net_vlan.vlan2: Creation complete after 2s (ID: /Common/external)
-   bigip_net_selfip.selfip2: Creating...
-   ip:   "" => "10.1.10.246/24"
-   name: "" => "/Common/externalselfIP"
-   vlan: "" => "/Common/external"
-   bigip_net_selfip.selfip1: Creation complete after 0s (ID: /Common/internalselfIP)
-   bigip_net_selfip.selfip2: Creation complete after 0s (ID: /Common/externalselfIP)
+   	bigip_sys_ntp.ntp1: Creating...
+   	description:        "" => "/Common/NTP1"
+   	servers.#:          "0" => "1"
+   	servers.1450813517: "" => "time.google.com"
+   	timezone:           "" => "America/Los_Angeles"
+   	bigip_net_vlan.vlan1: Creating...
+   	interfaces.#:          "0" => "1"
+   	interfaces.0.tagged:   "" => "false"
+   	interfaces.0.vlanport: "" => "1.2"
+   	name:                  "" => "/Common/internal"
+   	tag:                   "" => "101"
+   	bigip_net_vlan.vlan2: Creating...
+   	interfaces.#:          "0" => "1"
+   	interfaces.0.tagged:   "" => "false"
+   	interfaces.0.vlanport: "" => "1.1"
+   	name:                  "" => "/Common/external"
+   	tag:                   "" => "102"
+   	bigip_sys_dns.dns1: Creating...
+   	description:             "" => "/Common/DNS1"
+   	name_servers.#:          "0" => "1"
+   	name_servers.3817307869: "" => "8.8.8.8"
+   	number_of_dots:          "" => "2"
+   	search.#:                "0" => "1"
+   	search.3719609835:       "" => "f5.com"
+   	bigip_sys_ntp.ntp1: Creation complete after 2s (ID: /Common/NTP1)
+   	bigip_sys_dns.dns1: Creation complete after 2s (ID: /Common/DNS1)
+   	bigip_net_vlan.vlan1: Creation complete after 2s (ID: /Common/internal)
+   	bigip_net_selfip.selfip1: Creating...
+   	ip:   "" => "10.1.20.246/24"
+   	name: "" => "/Common/internalselfIP"
+   	vlan: "" => "/Common/internal"
+   	bigip_net_vlan.vlan2: Creation complete after 2s (ID: /Common/external)
+   	bigip_net_selfip.selfip2: Creating...
+   	ip:   "" => "10.1.10.246/24"
+   	name: "" => "/Common/externalselfIP"
+   	vlan: "" => "/Common/external"
+   	bigip_net_selfip.selfip1: Creation complete after 0s (ID: /Common/internalselfIP)
+   	bigip_net_selfip.selfip2: Creation complete after 0s (ID: /Common/externalselfIP)
 
-   Apply complete! Resources: 6 added, 0 changed, 0 destroyed.
+   	Apply complete! Resources: 6 added, 0 changed, 0 destroyed.
 
 .. NOTE::
 	 All work for this lab will be performed exclusively from the Windows
