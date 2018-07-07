@@ -6,48 +6,242 @@ lab and access your jump host.
 
 #. Simple JSON payload for HTTP::
    
+   {
 
-        {
-        "sample_01": {
-        "b1": {
-            "class": "Application",
-            "serviceMain": {
-                "class": "Service_HTTP",
-                "pool": "web_pool",
-                "virtualAddresses": [
-                    "198.19.192.1"
-                ]
-         },
-            "template": "http",
-            "web_pool": {
-                "class": "Pool",
-                "members": [
-                    {
-                        "serverAddresses": [
-                            "198.19.192.2",
-                            "198.19.192.3"
-                        ],
-                        "servicePort": 80
-                    }
-                ],
-                "monitors": [
-                    "http"
-                ]
-            }
-        },
-        "class": "Tenant",
-        "verifiers": {
-            "13.x": "5ca2b95339f48129a0837952d3bdce2358a40c8339610ffd84866b2ff86351b5"
-        }
-        },
-        "class": "ADC",
-        "controls": {
-        "archiveTimestamp": "2018-04-26T17:40:15.804Z"
-        },
-        "ident": "1524764414532",
-        "schema_version": "3.0.0",
-        "update_mode": "selective"
-        }  
+	"fullPath": "/Common/simplehttp.app/simplehttp",
+
+	"generation": 222,
+
+	"inheritedDevicegroup": "true",
+
+	"inheritedTrafficGroup": "true",
+
+	"kind": "tm:sys:application:service:servicestate",
+
+	"name": "simplehttp",
+
+	"partition": "Common",
+
+	"selfLink": "https://localhost/mgmt/tm/sys/application/service/~Common~simplehttp.app~simplehttp?ver=13.0.0",
+
+	"strictUpdates": "enabled",
+
+	"subPath": "simplehttp.app",
+
+	"tables": [{
+
+			"name": "basic__snatpool_members"
+
+		},
+
+		{
+
+			"name": "net__snatpool_members"
+
+		},
+
+		{
+
+			"name": "optimizations__hosts"
+
+		},
+
+		{
+
+			"columnNames": [
+
+				"name"
+
+			],
+
+			"name": "pool__hosts",
+
+			"rows": [{
+
+				"row": [
+
+					"f5.cisco.com"
+
+				]
+
+			}]
+
+		},
+
+		{
+
+			"columnNames": [
+
+				"addr",
+
+				"port",
+
+				"connection_limit"
+
+			],
+
+			"name": "pool__members",
+
+			"rows": [{
+
+					"row": [
+
+						"10.1.20.252",
+
+						"80",
+
+						"0"
+
+					]
+
+				}
+
+
+
+			]
+
+		},
+
+		{
+
+			"name": "server_pools__servers"
+
+		}
+
+	],
+
+	"template": "/Common/f5.http",
+
+	"templateModified": "no",
+
+	"templateReference": {
+
+		"link": "https://localhost/mgmt/tm/sys/application/template/~Common~f5.http?ver=13.0.0"
+
+	},
+
+	"trafficGroup": "/Common/traffic-group-1",
+
+	"trafficGroupReference": {
+
+		"link": "https://localhost/mgmt/tm/cm/traffic-group/~Common~traffic-group-1?ver=13.0.0"
+
+	},
+
+	"variables": [{
+
+			"encrypted": "no",
+
+			"name": "client__http_compression",
+
+			"value": "/#create_new#"
+
+		},
+
+		{
+
+			"encrypted": "no",
+
+			"name": "monitor__monitor",
+
+			"value": "/Common/http"
+
+		},
+
+		{
+
+			"encrypted": "no",
+
+			"name": "net__client_mode",
+
+			"value": "wan"
+
+		},
+
+		{
+
+			"encrypted": "no",
+
+			"name": "net__server_mode",
+
+			"value": "lan"
+
+		},
+
+		{
+
+			"encrypted": "no",
+
+			"name": "net__v13_tcp",
+
+			"value": "warn"
+
+		},
+
+		{
+
+			"encrypted": "no",
+
+			"name": "pool__addr",
+
+			"value": "10.1.10.100"
+
+		},
+
+		{
+
+			"encrypted": "no",
+
+			"name": "pool__pool_to_use",
+
+			"value": "/#create_new#"
+
+		},
+
+		{
+
+			"encrypted": "no",
+
+			"name": "pool__port",
+
+			"value": "80"
+
+		},
+
+		{
+
+			"encrypted": "no",
+
+			"name": "ssl__mode",
+
+			"value": "no_ssl"
+
+		},
+
+		{
+
+			"encrypted": "no",
+
+			"name": "ssl_encryption_questions__advanced",
+
+			"value": "no"
+
+		},
+
+		{
+
+			"encrypted": "no",
+
+			"name": "ssl_encryption_questions__help",
+
+			"value": "hide"
+
+		}
+
+	]
+
+}
+
 
 
 .. NOTE::
