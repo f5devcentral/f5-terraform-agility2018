@@ -6,7 +6,7 @@ lab and access your jump host.
 
 #. Simple JSON payload for HTTP::
    
-   {
+        {
 
 	"fullPath": "/Common/simplehttp.app/simplehttp",
 
@@ -240,7 +240,7 @@ lab and access your jump host.
 
 	]
 
-}
+	}
 
 
 
