@@ -9,8 +9,8 @@ lab and access your jump host.
 	 jumphost. No installation or interaction with your local system is
 	 required. RDP to Jumpbox f5student/f5DEMOs4u
 
-Please use Blueprint Terraform-scs-7-05-bp
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Use Blueprint Terraform-scs-7-05-bp
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 Lab Topology
@@ -20,7 +20,7 @@ The following components have been included in your lab environment:
 
 - 1 x F5 BIG-IP VE (v13.1)
 - 1 x Webserver (xubuntu 14.04)
-- 1 x Jumphost / Terraform 
+- 1 x Jumphost  
 
   .. image:: /_static/topo.png
 
@@ -39,7 +39,7 @@ components:
     * - **Component**
       - **VLAN/IP Address(es)**
       - **Credentials**
-    * - Jump Box RDP
+    * - Jump Box use RDP
       - - **Management:** 10.1.1.10
         - **External:** 10.1.10.51
       - ``f5student``/``f5DEMOs4u``
