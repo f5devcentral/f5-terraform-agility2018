@@ -6,7 +6,7 @@ lab and access your jump host.
 
 #. Execute terraform apply with updated master.tf::
    
-   terraform apply
+    terraform apply
 
    	Enter a value: yes
 
@@ -55,3 +55,5 @@ lab and access your jump host.
 	 All work for this lab will be performed exclusively from the Windows
 	 jumphost. No installation or interaction with your local system is
 	 required.
+
+
