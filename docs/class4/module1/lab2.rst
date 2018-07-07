@@ -32,7 +32,7 @@ This class covers the following topics:
 
 		   resource "bigip_ltm_pool_attachment" "attach_node" {
 			pool = "/Common/terraform-pool"
-		  	node = "/Common/10.1.20.251:80"
+		  	node = "/Common/10.1.20.252:80"
 			depends_on = ["bigip_ltm_pool.pool"]
 		   }
 
