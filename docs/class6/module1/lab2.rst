@@ -7,7 +7,7 @@ lab and access your jump host.
 
 #. Remove Pool attachement  configuration::
 
-  terraform destroy -target=bigip_ltm_pool_attachment.attach_node
+        terraform destroy -target=bigip_ltm_pool_attachment.attach_node
 	bigip_ltm_pool.pool: Refreshing state... (ID: /Common/terraform-pool)
 	bigip_ltm_pool_attachment.attach_node: Refreshing state... (ID: /Common/terraform-pool-/Common/10.1.20.252:80)
 

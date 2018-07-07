@@ -7,7 +7,7 @@ lab and access your jump host.
 
 #. Remove all configuration::
 
-   terraform destroy
+        terraform destroy
 	bigip_sys_ntp.ntp1: Refreshing state... (ID: /Common/NTP1)
 	bigip_net_vlan.vlan2: Refreshing state... (ID: /Common/external)
 	bigip_net_vlan.vlan1: Refreshing state... (ID: /Common/internal)

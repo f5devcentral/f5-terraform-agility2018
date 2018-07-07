@@ -7,7 +7,7 @@ lab and access your jump host.
 
 #. Remove Pool configuration::
 
-   terraform destroy -target=bigip_ltm_pool.pool
+        terraform destroy -target=bigip_ltm_pool.pool
 	bigip_ltm_pool.pool: Refreshing state... (ID: /Common/terraform-pool)
 
 	An execution plan has been generated and is shown below.
