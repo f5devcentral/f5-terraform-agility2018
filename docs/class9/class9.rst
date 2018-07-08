@@ -1,12 +1,16 @@
-Modify iApp JSON Payload & Test
--------------------------------
+Test Client to Server
+=====================
 
-.. TODO:: Complete getting started instructions
+This class covers the following topics:
 
-Please follow the instructions provided by the instructor to start your
-lab and access your jump host.
+- Verify configuration on bigip  
+- Access web application from Client
 
-.. NOTE::
-	 All work for this lab will be performed exclusively from the Windows
-	 jumphost. No installation or interaction with your local system is
-	 required.
+Expected time to complete: ** 10 mins **
+
+.. toctree::
+   :maxdepth: 1
+   :glob:
+
+   lab*
+
