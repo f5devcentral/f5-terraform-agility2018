@@ -12,43 +12,60 @@ This class covers the following topics:
 - Building bigip terraform provider binary 
 - Creating .TF file for bigip and Initializing 
 
-#. Open terminal on the Client/Jumpbox VM  and execute -> ``go version``
+#. Open terminal on the Client/Jumpbox VM  and execute::
 
-#. Come to home directory -> ``cd``
+    go version
 
-#. Create a directory workspace from the home directory -> ``mkdir workspace``
+#. Come to home directory:: 
+    cd
 
-#. Change GOPATH pointing to workspace -> ``export GOPATH=$HOME/workspace``
+#. Create a directory workspace from the home directory:: 
+  
+    mkdir workspace
 
-#. Create directories as shown below place holder for the repo -> ``mkdir -p $GOPATH/src/github.com/f5devcentral``
+#. Change GOPATH pointing to workspace::
+    
+    export GOPATH=$HOME/workspace
 
-#. Change the directory to workspace -> ``cd $GOPATH``
+#. Create directories as shown below place holder for the repo::
 
-#. Get the provider code from github  as shown -> ``go get github.com/f5devcentral/terraform-provider-bigip``
+    mkdir -p $GOPATH/src/github.com/f5devcentral
 
-#. Change directory to the provider directory -> ``cd src/github.com/f5devcentral/terraform-provider-bigip/``
+#. Change the directory to workspace::
 
-#. Build the F5 BIG-IP Terraform Provider Binary -> ``go build``
+    cd $GOPATH
 
-#. Create TF file using any editor name the file as master.tf & enter the below code
+#. Get the provider code from github  as shown:: 
 
-    ``provider "bigip" {``
+    go get github.com/f5devcentral/terraform-provider-bigip
 
-    ``address = "10.1.1.246"``
+#. Change directory to the provider directory::
+
+    cd src/github.com/f5devcentral/terraform-provider-bigip/
+
+#. Build the F5 BIG-IP Terraform Provider Binary::
+
+    go build``
+
+#. Create TF file using any editor name the file as master.tf & enter the below code::
+
+    provider "bigip" {
+
+    address = "10.1.1.246"
  
-    ``username = "admin"``
+    username = "admin"
  
-    ``password = "admin"``
+    password = "admin"
  
-    ``}``
+    }
 
-#. Now initialize the bigip provider plugin
+#. Now initialize the bigip provider plugin::
 
-    ``terraform init``
+    terraform init
 
-    ``Initializing provider plugins...``
+    Initializing provider plugins...
 
-    ``Terraform has been successfully initialized!``
+    Terraform has been successfully initialized!
 
 .. NOTE:: For 4. you can use go env command to see the output
 
