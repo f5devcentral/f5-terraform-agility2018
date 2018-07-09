@@ -3,8 +3,6 @@ Lab – Download the GO tar file
 In this task you will open a web browser and navigate to the https://golang.org/dl/
 site.
 
-.. NOTE:: You don't need GO programming skills.
-
 Follow these steps to complete this task:
 
 #. Open your web browser
@@ -38,3 +36,5 @@ Follow these steps to complete this task:
   .. IMPORTANT:: You should see the following
 
     ``go version go1.10.3 linux/amd64``
+
+.. NOTE:: You don't need GO programming skills.

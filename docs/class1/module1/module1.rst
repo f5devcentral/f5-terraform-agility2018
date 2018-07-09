@@ -1,10 +1,9 @@
 Module – Installing GO package 
 =============================================
 
-.. TODO:: Needs module description
 
 In this module you will learn how to install a GO  into your
-environment.
+environment. GO package is required to compile the f5 terraform provider code.
 
 .. toctree::
    :maxdepth: 1
