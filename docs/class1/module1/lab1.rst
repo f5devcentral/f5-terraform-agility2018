@@ -19,19 +19,21 @@ Follow these steps to complete this task:
 
 #. Open terminal on the Client/Jumpbox VM
 
-#. Execute the following command on Jumpbox terminal
+#. Execute the following command on Jumpbox terminal::
 
-   ``cd Download``
+    cd Download
 
-   ``sudo tar -C /usr/local -xzf go1.10.3.linux-amd64.tar.gz``
+    sudo tar -C /usr/local -xzf go1.10.3.linux-amd64.tar.gz
    
    .. IMPORTANT:: Enter password as f5DEMOs4u and username f5student
 
-#. Include GO executable in the Path
+#. Include GO executable in the Path::
 
-  ``export PATH=$PATH:/usr/local/go/bin``
+    export PATH=$PATH:/usr/local/go/bin
 
-#. Test GO pacakage by executing -> ``go version``
+#. Test GO pacakage by executing::
+  
+     go version
  
   .. IMPORTANT:: You should see the following
 
