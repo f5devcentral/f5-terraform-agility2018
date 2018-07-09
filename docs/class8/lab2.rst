@@ -9,7 +9,7 @@ lab and access your jump host.
 
 	resource "bigip_sys_iapp" "simplehttp" {
                name = "simplehttp"
-               jsonefile = "${file("simplehttp.json")}"
+               jsonfile = "${file("simplehttp.json")}"
                }
 
 

@@ -7,7 +7,7 @@ lab and access your jump host.
 .. NOTE::
 	 All work for this lab will be performed exclusively from the 
 	 jumphost. No installation or interaction with your local system is
-	 required. RDP to Jumpbox f5student/f5DEMOs4u
+	 required. RDP to Jumpbox f5student/f5DEMOs4u For Mac use Remote Desktop 10.X
 
 Use Blueprint Terraform-scs-7-05-bp
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
