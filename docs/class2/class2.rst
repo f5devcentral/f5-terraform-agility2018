@@ -22,24 +22,24 @@ Follow these steps to complete this task:
 
 #. Open terminal on the Client/Jumpbox VM
 
-#. Execute the following command on Jumpbox terminal 
+#. Execute the following command on Jumpbox terminal:: 
    
-   ``cd Download``
+   	cd Download
  
-   ``sudo unzip terraform_0.11.7_linux_amd64.zip``
+   	sudo unzip terraform_0.11.7_linux_amd64.zip
 
    .. IMPORTANT:: Enter password as f5DEMOs4u and username f5student
 
    
-   ``sudo mv terraform /usr/local/bin``
+   	sudo mv terraform /usr/local/bin
 
-#. Test Terraform  pacakage by executing
+#. Test Terraform  pacakage by executing::
 
-  ``terraform -version``
+  	terraform -version
  
   .. IMPORTANT:: You should see the following
 
-    ``Terraform v0.11.7``
+    	Terraform v0.11.7
 
   .. NOTE::
 	 All work for this lab will be performed exclusively from the 
