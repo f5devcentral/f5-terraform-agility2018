@@ -4,7 +4,16 @@ Create JSON Payload for HTTP
 Please follow the instructions provided by the instructor to start your
 lab and access your jump host.
 
-#. Simple JSON payload for HTTP::
+#. Open the terminal with file name simplehttp.json::
+
+        cd $GOPATH/src/github.com/f5devcentral/terraform-provider-bigip/
+        
+#. Remove existing simplehttp.json file & create new one 
+
+        rm simplehttp.json
+        nano simplehttp.json
+
+#. Add below to simplehttp.json file::
    
         {
 

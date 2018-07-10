@@ -6,7 +6,11 @@ lab and access your jump host.
 
 This class covers the following topics:
 
-- Update the master.tf file to include Infra structure resources like NTP, DNS, VLAN
+- Update the master.tf file to include Infra structure resources like NTP, DNS, VLAN::
+   
+   cd $GOPATH/src/github.com/f5devcentral/terraform-provider-bigip/
+   nano master.tf
+  
 
 #. Open master.tf in  terminal on the Client/Jumpbox VM::   
 
