@@ -8,7 +8,7 @@ lab and access your jump host.
 
         cd $GOPATH/src/github.com/f5devcentral/terraform-provider-bigip/
         
-#. Remove existing simplehttp.json file & create new one 
+#. Remove existing simplehttp.json file & create new one:: 
 
         rm simplehttp.json
         nano simplehttp.json
