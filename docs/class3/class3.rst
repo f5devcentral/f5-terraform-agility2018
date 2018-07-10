@@ -45,7 +45,7 @@ This class covers the following topics:
 
 #. Build the F5 BIG-IP Terraform Provider Binary::
 
-    go build``
+    go build
 
 #. Create TF file using any editor name the file as master.tf & enter the below code::
 
