@@ -1,12 +1,15 @@
-Remove Virtual Server  Configuration
+Remove Virtual Server Configuration
 ------------------------------------
 
 Please follow the instructions provided by the instructor to start your
 lab and access your jump host.
 
 #. Issue terraform destroy command as shown below::
-   
+
         terraform destroy -target=bigip_ltm_virtual_server.http
+
+You should see the following output::
+
 	bigip_ltm_pool.pool: Refreshing state... (ID: /Common/terraform-pool)
 	bigip_ltm_virtual_server.http: Refreshing state... (ID: /Common/terraform_vs_http)
 
@@ -25,7 +28,11 @@ lab and access your jump host.
   	Terraform will destroy all your managed infrastructure, as shown above.
   	There is no undo. Only 'yes' will be accepted to confirm.
 
-  	Enter a value: yes
+  	Enter a value:
+
+Continue terraform destroy by typing ``yes`` followed by the enter key...
+
+You should see the following output::
 
 	bigip_ltm_virtual_server.http: Destroying... (ID: /Common/terraform_vs_http)
 	bigip_ltm_virtual_server.http: Destruction complete after 0s

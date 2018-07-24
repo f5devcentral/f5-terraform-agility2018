@@ -8,6 +8,9 @@ lab and access your jump host.
 #. Remove Pool configuration::
 
         terraform destroy -target=bigip_ltm_pool.pool
+
+You should see the following output::
+
 	bigip_ltm_pool.pool: Refreshing state... (ID: /Common/terraform-pool)
 
 	An execution plan has been generated and is shown below.
@@ -25,15 +28,16 @@ lab and access your jump host.
   	Terraform will destroy all your managed infrastructure, as shown above.
   	There is no undo. Only 'yes' will be accepted to confirm.
 
-  	Enter a value: yes
+  	Enter a value:
+
+Continue terraform destroy by typing ``yes`` followed by the enter key...
+
+You should see the following output::
 
 	bigip_ltm_pool.pool: Destroying... (ID: /Common/terraform-pool)
 	bigip_ltm_pool.pool: Destruction complete after 0s
 
 	Destroy complete! Resources: 1 destroyed.
- 
-
-
 
 .. NOTE::
 	 All work for this lab will be performed exclusively from the Windows

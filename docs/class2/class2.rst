@@ -9,7 +9,7 @@ This class covers the following topics:
 - Downloading Terraform software  package from https://www.terraform.io/downloads.html
 - Installing terraform & testing 
 
-Expected time to complete: ** 15 mins **
+Expected time to complete: **15 mins**
 
 Follow these steps to complete this task:
 
@@ -18,7 +18,7 @@ Follow these steps to complete this task:
 
   .. image:: /_static/terraformimage.png
 
-#. Click on the Linux 64 bit it will start ``terraform_0.11.7_linux..zip`` file download.
+#. Click on the Linux 64 bit it will start ``terraform_0.11.7_linux_amd64.zip`` file download.
 
 #. Open terminal on the Client/Jumpbox VM
 
@@ -28,10 +28,12 @@ Follow these steps to complete this task:
  
    	sudo unzip terraform_0.11.7_linux_amd64.zip
 
-   .. IMPORTANT:: Enter password as f5DEMOs4u and username f5student
+   .. IMPORTANT:: Enter **f5DEMOs4u** if prompted for f5student's password
 
    
-   	sudo mv terraform /usr/local/bin
+#. Move the Terraform binary into /usr/local/bin by executing::
+
+    sudo mv terraform /usr/local/bin
 
 #. Test Terraform  pacakage by executing::
 

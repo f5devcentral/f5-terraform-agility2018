@@ -4,9 +4,12 @@ Terraform Apply to Deploy iApp
 Please follow the instructions provided by the instructor to start your
 lab and access your jump host.
 
-#. Add iapp resource to use Simple http Json::
-   
+#. Add iApp resource to use simple http JSON::
+
     terraform apply
+
+You should see the following output::
+
 	bigip_sys_dns.dns1: Refreshing state... (ID: /Common/DNS1)
 	bigip_net_vlan.vlan2: Refreshing state... (ID: /Common/external)
 	bigip_sys_ntp.ntp1: Refreshing state... (ID: /Common/NTP1)
@@ -39,7 +42,11 @@ lab and access your jump host.
   	Terraform will perform the actions described above.
   	Only 'yes' will be accepted to approve.
 
-  	Enter a value: yes
+  	Enter a value:
+
+Continue terraform apply by typing ``yes`` followed by the enter key...
+
+You should see the following output::
 
 	bigip_sys_iapp.simplehttp: Creating...
   	devicegroup:             "" => "none"
@@ -54,9 +61,6 @@ lab and access your jump host.
 	bigip_sys_iapp.simplehttp: Creation complete after 1s (ID: simplehttp)
 
 	Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
-
-
-
 
 
 .. NOTE::
