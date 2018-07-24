@@ -6,7 +6,7 @@ lab and access your jump host.
 
 #. Open browser on jump box
 
-#. Access Server using  http://10.1.10.100  (Webserver)
+#. Access Server using  http://10.1.10.100  (web server)
 
 .. image:: /_static/server.png
 

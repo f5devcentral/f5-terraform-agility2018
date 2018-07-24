@@ -4,30 +4,31 @@ Build F5 BIG-IP Provider
 Please follow the instructions provided by the instructor to start your
 lab and access your jump host.
 
-Expected time to complete: ** 15 mins **
+Expected time to complete: **15 mins**
 
 This class covers the following topics:
 
 - Downloading the big-ip terraform provider code package from https://github.com/f5devcentral/terraform-provider-bigip
-- Building bigip terraform provider binary 
-- Creating .TF file for bigip and Initializing 
+- Building bigip terraform provider binary
+- Creating .TF file for bigip and Initializing
 
-#. Open terminal on the Client/Jumpbox VM  and execute::
+#. Open terminal on the Client/Jumpbox VM and execute::
 
     go version
 
-#. Come to home directory:: 
+#. Change to f5student's home directory::
+
     cd
 
-#. Create a directory workspace from the home directory:: 
-  
+#. Create a directory workspace from the home directory::
+ 
     mkdir workspace
 
-#. Change GOPATH pointing to workspace::
-    
+#. Change GOPATH to reference the workspace::
+
     export GOPATH=$HOME/workspace
 
-#. Create directories as shown below place holder for the repo::
+#. Create directories as shown below as a placeholder for the repository::
 
     mkdir -p $GOPATH/src/github.com/f5devcentral
 
@@ -35,7 +36,7 @@ This class covers the following topics:
 
     cd $GOPATH
 
-#. Get the provider code from github  as shown:: 
+#. Get the F5 BIG-IP Terraform provider code from github as shown::
 
     go get github.com/f5devcentral/terraform-provider-bigip
 
@@ -43,20 +44,16 @@ This class covers the following topics:
 
     cd src/github.com/f5devcentral/terraform-provider-bigip/
 
-#. Build the F5 BIG-IP Terraform Provider Binary::
+#. Build the F5 BIG-IP Terraform Provider binary::
 
     go build
 
-#. Create TF file using any editor name the file as master.tf & enter the below code::
+#. Create TF file named **master.tf** using any editor. Insert the following content into it::
 
     provider "bigip" {
-
-    address = "10.1.1.246"
- 
-    username = "admin"
- 
-    password = "admin"
- 
+        address = "10.1.1.246"
+        username = "admin"
+        password = "admin"
     }
 
 #. Now initialize the bigip provider plugin::
@@ -67,9 +64,9 @@ This class covers the following topics:
 
     Terraform has been successfully initialized!
 
-.. NOTE:: For 4. you can use go env command to see the output
+.. NOTE:: For step 4, you can use the ``go env`` command to see the output
 
-.. NOTE:: For 9. you can use ls -lrt to see ``terraform-provider-bigip`` is created 
+.. NOTE:: For step 9, you can use the ``ls -lrt`` command to see that ``terraform-provider-bigip`` is created
 
 .. NOTE::
  All work for this lab will be performed exclusively from the Windows
