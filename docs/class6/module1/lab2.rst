@@ -5,9 +5,12 @@ Remove Pool attachement  Configuration
 Please follow the instructions provided by the instructor to start your
 lab and access your jump host.
 
-#. Remove Pool attachement  configuration::
+#. Remove Pool attachment configuration::
 
         terraform destroy -target=bigip_ltm_pool_attachment.attach_node
+
+You should see the following output::
+
 	bigip_ltm_pool.pool: Refreshing state... (ID: /Common/terraform-pool)
 	bigip_ltm_pool_attachment.attach_node: Refreshing state... (ID: /Common/terraform-pool-/Common/10.1.20.252:80)
 
@@ -26,7 +29,11 @@ lab and access your jump host.
   	Terraform will destroy all your managed infrastructure, as shown above.
   	There is no undo. Only 'yes' will be accepted to confirm.
 
-  	Enter a value: yes
+  	Enter a value:
+
+Continue terraform destroy by typing ``yes`` followed by the enter key...
+
+You should see the following output::
 
 	bigip_ltm_pool_attachment.attach_node: Destroying... (ID: /Common/terraform-pool-/Common/10.1.20.252:80)
 	bigip_ltm_pool_attachment.attach_node: Destruction complete after 0s

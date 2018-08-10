@@ -5,12 +5,12 @@ Please follow the instructions provided by the instructor to start your
 lab and access your jump host.
 
 #. Open browser on jump box
-#. Access bigip using http://10.1.1.246  admin/admin
-#. Click on Application Services verify iApp is running
+#. Access BIG-IP using http://10.1.1.246  admin/admin
+#. Click on Application Services to verify the **simplehttp** iApp has been configured
 
 .. image:: /_static/iapp.png
 
-#. Click on LTM and verify Virtual Server 
+#. Click on Local Traffic and verify Virtual Server exists
 
 .. image:: /_static/vs.png
 

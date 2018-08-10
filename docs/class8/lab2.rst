@@ -1,19 +1,15 @@
-Modify the master.tf file to include iapp resource
+Modify the master.tf file to include iApp resource
 --------------------------------------------------
 
 Please follow the instructions provided by the instructor to start your
 lab and access your jump host.
 
-#. Add iapp resource to use Simple http Json::
-   
+#. Using a text editor, modify the **master.tf** file to configure the iApp resource to use simple http JSON file::
 
 	resource "bigip_sys_iapp" "simplehttp" {
-               name = "simplehttp"
-               jsonfile = "${file("simplehttp.json")}"
-               }
-
-
-
+		name = "simplehttp"
+		jsonfile = "${file("simplehttp.json")}"
+	}
 
 
 .. NOTE::

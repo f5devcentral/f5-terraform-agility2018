@@ -4,9 +4,12 @@ Added iApp resource & execute terraform plan
 Please follow the instructions provided by the instructor to start your
 lab and access your jump host.
 
-#. Add iapp resource to use & terraform plan::
-   
+#. Execute the following command::
+
     terraform plan
+
+You should see the following output::
+
    	Refreshing Terraform state in-memory prior to plan...
    	The refreshed state will be used to calculate this plan, but will not be
         persisted to local or remote state storage.

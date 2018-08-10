@@ -8,6 +8,9 @@ lab and access your jump host.
 #. Remove all configuration::
 
         terraform destroy
+
+You should see the following output::
+
 	bigip_sys_ntp.ntp1: Refreshing state... (ID: /Common/NTP1)
 	bigip_net_vlan.vlan2: Refreshing state... (ID: /Common/external)
 	bigip_net_vlan.vlan1: Refreshing state... (ID: /Common/internal)
@@ -43,7 +46,11 @@ lab and access your jump host.
   	Terraform will destroy all your managed infrastructure, as shown above.
   	There is no undo. Only 'yes' will be accepted to confirm.
 
-  	Enter a value: yes
+  	Enter a value:
+
+Continue terraform destroy by typing ``yes`` followed by the enter key...
+
+You should see the following output::
 
 	bigip_sys_ntp.ntp1: Destroying... (ID: /Common/NTP1)
 	bigip_sys_dns.dns1: Destroying... (ID: /Common/DNS1)

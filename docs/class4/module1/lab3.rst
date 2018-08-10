@@ -9,6 +9,9 @@ This class covers the following topics:
 #. Execute Terraform plan::
 
     terraform plan
+
+You should see the following output::
+
     Refreshing Terraform state in-memory prior to plan...
     The refreshed state will be used to calculate this plan, but will not be
     persisted to local or remote state storage.

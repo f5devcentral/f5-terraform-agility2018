@@ -5,7 +5,7 @@ site.
 
 Follow these steps to complete this task:
 
-#. Open your web browser
+#. On the Client/Jumpbox VM, open your web browser
 #. Navigate to https://golang.org/dl/
 
 .. image:: /_static/goimage.png
@@ -25,7 +25,7 @@ Follow these steps to complete this task:
 
     sudo tar -C /usr/local -xzf go1.10.3.linux-amd64.tar.gz
    
-   .. IMPORTANT:: Enter password as f5DEMOs4u and username f5student
+   .. IMPORTANT:: Enter **f5DEMOs4u** when prompted for f5student's password
 
 #. Include GO executable in the Path::
 

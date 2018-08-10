@@ -1,4 +1,4 @@
-Destroy Configuration  
+Destroy Configuration
 =====================
 
 This class covers the following topics:
@@ -7,7 +7,7 @@ This class covers the following topics:
 - Remove Pool Configuration
 - Remove All remaining Configuration 
 
-Expected time to complete: ** 10 mins **
+Expected time to complete: **10 mins**
 
 .. toctree::
    :maxdepth: 1
