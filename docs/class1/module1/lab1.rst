@@ -21,7 +21,7 @@ Follow these steps to complete this task:
 
 #. Execute the following command on Jumpbox terminal::
 
-    cd Download
+    cd Downloads
 
     sudo tar -C /usr/local -xzf go1.10.3.linux-amd64.tar.gz
    
